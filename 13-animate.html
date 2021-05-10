@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @keyframes run{
+            0%, 100% {left: 0px; top: 0px;}
+            25% {left: 100px; top: 0px;}
+            50% {left: 100px; top: 100px;}
+            75% {left: 0px; top: 100px;}
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* 
+            @keyframe 定义帧动画
+            animation:
+                animation-name:  @keyframes定义
+                animation-duration: 动画持续的时间
+                animation-timing-function 时间函数
+                animation-delay 动画延迟时间
+                animation-iteration-count: 动画播放的次数
+                    1默认 number / infinite 无限循环
+                animation-direction:  动画运动的方向
+                    normal  /  alternate(正向反向交替进行) /  反向 reverse /  alternate-reverse反向正向交替进行
+
+                animation-name: run; 动画名字
+                animation-duration: 1s; 动画持续时间
+                animation-timing-function: ease; 动画速度
+                animation-iteration-count: infinite; 动画循环次数
+                animation-direction: alternate; 动画运行方向
+                animation-fill-mode: forwards; 动画停止位置
+            */    
+            animation: run 1s ease alternate infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

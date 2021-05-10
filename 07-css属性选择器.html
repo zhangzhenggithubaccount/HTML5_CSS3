@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--
+    旧：
+        E[attr]
+        E[attr="val"]
+
+    新增的属性选择器
+        E[attr^="val"]  选择拥有attr属性且属性值为val开头的E元素
+        E[attr$="val"]  选择拥有attr属性且属性值以val结束的E元素
+        E[attr*="val"]   选择拥有attr属性且属性值中包含val的E元素
+    -->
+
+    <style type="text/css">
+
+        body {
+            text-decoration: none;
+            text-align: center;
+        }
+
+        div {
+            width: 500px;
+            margin: 0 auto;
+        }
+        
+        /* 1、获取class name中含有字符串box的class */
+        /* div[class*="box"] {
+            border: 2px solid rgb(21, 177, 238);
+            background-color: skyblue;
+        } */
+        
+        /* 2、获取class name 以box开头的class */
+        /* div[class^="box"] {
+            border: 2px solid rgb(21, 177, 238);
+            background-color: skyblue;
+        } */
+
+        /* 3、获取class name 以box结尾的class */
+        /* div[class$="box"] {
+            border: 2px solid rgb(21, 177, 238);
+            background-color: skyblue;
+        } */
+
+        /* 4、获取class name 为box的class */
+        div[class="box"] {
+            border: 2px solid rgb(21, 177, 238);
+            background-color: skyblue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="abox">$box</div>
+    <div class="boxb">^box</div>
+    <div class="box">box</div>
+    <div class="cbox">$box</div>
+    <div class="boxd">^box</div>
+    <div class="eboxf">*box</div>
+    <div class="gbox">$box</div>
+</body>
+</html>

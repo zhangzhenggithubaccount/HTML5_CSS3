@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+
+        div:nth-of-type(n) {
+            float: left;
+            width: 200px;
+            height: 200px;
+            border: 1px solid skyblue;
+        }
+
+        .box1 {
+            background-image: url(./img/pic.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box2 {
+            background-image: url(./img/pic.png), url(./img/2.jpg);
+            background-position: top left, bottom right;
+            background-repeat: no-repeat;
+            background-size: 50%, 100%;
+        }
+
+        .box3 {
+            background-image: url(./img/2.jpg);
+            background-size: cover;
+        }
+
+        .box4 {
+            background-image: url(./img/2.jpg);
+            background-size: contain;
+        }
+
+        .box5 {
+            background-image: url(./img/2.jpg);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid skyblue;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            /* background : background-color 
+                            background-image 
+                            background-repeat 
+                            background-attachment 
+                            background-position; */
+            background:skyblue url(./img/2.jpg) no-repeat scroll center;
+            /* background-size: contain; */
+            /* background-size: cover; */
+            background-clip: content-box;
+        }
+
+        .box2 {
+            /* background : background-color 
+                            background-image 
+                            background-repeat 
+                            background-attachment 
+                            background-position; */
+            border: 10px dotted skyblue;
+            background:skyblue url(./img/2.jpg) no-repeat scroll center;
+            /* background-size: contain; */
+            /* background-size: cover; */
+            background-clip: border-box;
+        }
+
+        .box3 {
+            /* background : background-color 
+                            background-image 
+                            background-repeat 
+                            background-attachment 
+                            background-position; */
+            background:skyblue url(./img/2.jpg) no-repeat scroll center;
+            /* background-size: contain; */
+            /* background-size: cover; */
+            background-clip: padding-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>

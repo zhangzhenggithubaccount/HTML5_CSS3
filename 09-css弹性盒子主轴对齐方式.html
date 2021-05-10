@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*  
+            flex-start 起始对齐
+            flex-end 末端对齐
+            space-around 分散对齐
+            space-between 两端对齐
+        */
+        .box {
+            width: 500px;
+            display: flex;
+            /* justify-content: flex-start; 起始对齐 */
+            /* justify-content: flex-end; 末端对齐 */
+            /* justify-content: space-around; 分散对齐 */
+            /* justify-content: space-between; 两端对齐 */
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- audio 音频
+    ie9以下不支持
+        允许在audio插入内容，用于显示在不支持的浏览器
+    属性：
+        src 要播放的url
+        controls 显示播放控件
+        loop 循环播放
+        muted 静音
+        MP3\Ogg\Wav
+    格式       	MIME-type                         浏览器支持情况（最新）
+    MP3 	  audio/mpeg	            IE9+、chrome、firefox、safari5+、opera10+
+    Ogg 	 audio/ogg 	                    chrome、firefox、opera10+
+    Wav	     audio/wav	                    chrome、firefox、safari5+、opera10+
+    audio 允许使用source引入多个资源路径，默认播放浏览器可识别的第一个格式
+    source 媒介元素，可以链接不同的文件，浏览器使用第一个可识别的格式 -->
+
+    <audio controls loop muted>
+        <source src="./audio/butterfly.ogg" type="audio/ogg"/>
+        <source src="./audio/hanmai.mp3" type="audio/mp3"/>
+        对不起，您的浏览器不支持audio元素播放音频
+    </audio>
+</body>
+</html>

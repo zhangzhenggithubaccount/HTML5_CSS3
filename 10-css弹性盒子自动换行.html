@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box1,
+        .box2,
+        .box3 {
+            display: flex;
+            border: 1px solid blue;
+            width: 800px;
+        }
+
+        .box1 div,
+        .box2 div,
+        .box3 div {
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+            margin: 0 1px;
+            /* box-sizing: border-box; 盒子大小包括边框 */
+        }
+
+        .box1 {
+            flex-wrap: none;
+        }
+
+        .box2 {
+            flex-wrap: wrap;
+        }
+
+        .box3 {
+            flex-wrap: wrap-reverse;
+        }
+        /* flex-shrink 在nonwrap下生效 */
+        .box1 div:nth-child(2n+1) {
+            flex-shrink: 2;
+        }
+
+        .box2 div:nth-child(2n+1) {
+            flex-shrink: 2;
+        }
+
+        .box3 div:nth-child(2n+1) {
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="box3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

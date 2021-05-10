@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 创建element
+        document.createElement("header");
+        document.createElement("footer");
+
+    </script>
+    <style type="text/css">
+
+        /* 创建元素后，默认内联显示 */
+        header, footer {
+            display: block;
+        }
+
+        .wrap {
+            width: 520px;
+            padding: 0 10px 10px;
+            background-color: #f1f1f1;
+            font: 18px/32px Arial;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .header,
+        .nav,
+        .article,
+        .aside,
+        .footer {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background-color: #595959;
+            margin-top: 8px;
+        }
+
+        .main:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .article {
+            float: left;
+            width: 317px;
+            height: 130px;
+        }
+
+        .section {
+            height: 80px;
+            background-color: #3b3b3b;
+            margin: 0 8px;
+        }
+
+        .aside {
+            float: right;
+            width: 195px;
+            height: 130px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">header</header>
+        <nav class="nav">nav</nav>
+        <div class="main">
+            <article class="article">
+                article
+                <section class="section">section</section>
+            </article>
+            <aside class="aside">aside</aside>
+        </div>
+        <footer class="footer">footer</footer>
+    </div>
+    
+</body>
+</html>

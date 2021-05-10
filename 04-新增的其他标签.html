@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- video 视频
+    ie9以下不支持
+        允许在video 插入内容，用于显示在不支持的浏览器
+    属性：
+        src 要播放的视频的url
+        controls 显示播放控件
+        loop 循环播放
+        muted 静音
+        height 播放器高度
+        width 播放器宽度
+        poster 预览图片
+    MP4	\WebM\ogg
+
+    格式       		MIME-type                         浏览器支持情况（最新）
+    MP4		      video/mp4	            IE 、chrome、firefox、safari、opera25+
+    WebM	     video/webm	                 chrome、firefox、opera
+    Ogg		     video/ogg  	             chrome、firefox、opera
+
+    video允许使用source引入多个资源路径，默认播放浏览器可识别的第一个格式
+
+    source 媒介元素，可以链接不同的文件，浏览器使用第一个可识别的格式 -->
+
+        <video controls loop width="400" poster="./img/pic.png">
+            <source src="./video/movie.mp4" type="video/mp4"/>
+            对不起您的浏览器不支持video元素播放视频
+        </video>
+
+</body>
+</html>

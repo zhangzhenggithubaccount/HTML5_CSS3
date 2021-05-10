@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+
+        .wrap {
+            overflow: hidden;
+            width: 520px;
+            padding: 0 10px 10px;
+            background-color: #f1f1f1;
+            font: 18px/32px Arial;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header,
+        .nav,
+        .article,
+        .aside,
+        .footer {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background-color: #595959;
+            margin-top: 8px;
+        }
+        
+        .main:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .article {
+            float: left;
+            width: 317px;
+            height: 130px;
+        }
+
+        .section {
+            height: 80px;
+            background-color: #3b3b3b;
+            margin: 0 8px;
+        }
+
+        .aside {
+            float: right;
+            width: 195px;
+            height: 130px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="main">
+            <div class="article">
+                article
+                <div class="section">section</div>
+            </div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+
+</body>
+</html>

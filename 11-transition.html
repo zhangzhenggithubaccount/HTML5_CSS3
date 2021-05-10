@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box,
+        .tran {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin: 10px 0;
+            /* transiton: transition-property 
+                          transition-duration 
+                          transition-delay 
+                          transition-timing-function; */
+            /* 兼容性 */
+            -webkit-transition-property: width;
+            -moz-transition-property: width;
+            -ms-transition-property: width;
+            -o-transition-property: width;
+            transition-property: width;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            -ms-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+        .box:hover,
+        .tran:hover {
+            width: 1000px;
+        }
+
+        .tran:nth-child(1){
+            transition-timing-function: ease;
+        }
+
+        .tran:nth-child(2){
+            transition-timing-function: ease-in;
+        }
+
+        .tran:nth-child(3){
+            transition-timing-function: ease-out;
+        }
+
+        .tran:nth-child(4){
+            transition-timing-function: ease-in-out;
+        }
+
+        .tran:nth-child(5){
+            transition-timing-function: linear;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="tran">ease</div>
+    <div class="tran">ease-in</div>
+    <div class="tran">ease-out</div>
+    <div class="tran">ease-in-out</div>
+    <div class="tran">linear</div>
+</body>
+</html>

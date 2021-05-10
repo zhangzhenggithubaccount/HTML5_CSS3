@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    强调结构：
+    E:first-child{}  选择父元素中的第一个子元素E
+    E:last-child{}  选择父元素中的最后一个子元素E
+    E:nth-child(n){} 选择父元素中的第n个子元素E，n的取值：
+        数字
+        表达式  2n  2n+1  3n
+        关键词　even（偶数）  odd(奇数)
+    E:nth-last-child(n){} 选择父元素中倒数第n个子元素E 
+    -->
+    <style type="text/css">
+
+        * {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .box {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        li {
+            height: 40px;
+            line-height: 40px;
+        }
+
+        /* 1、选择li的first child */
+        /* li:first-child {
+            background-color: skyblue;
+            border: 2px solid rgb(27, 178, 238);
+        } */
+
+        /* 2、选择li的even child */
+        /* li:nth-child(even) {
+            background-color: skyblue;
+            border: 2px solid rgb(27, 178, 238);
+        } */
+
+        /* 3、选择li的odd child */
+        /* li:nth-child(odd) {
+            background-color: skyblue;
+            border: 2px solid rgb(27, 178, 238);
+        } */
+
+        /* 4、表达式选择li (2n, 2n-1)*/
+        /* li:nth-child(2n) {
+            background-color: skyblue;
+            border: 2px solid rgb(27, 178, 238);
+        } */
+
+        /* 5、nth-last-child() 倒序选择li */
+        /* li:first-child {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        li:last-child {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        li:nth-last-child(even){
+            background-color: skyblue;
+        }
+
+        li:nth-last-child(odd) {
+            background-color: rgb(27, 178, 238);
+        } */
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+    </div>
+</body>
+</html>

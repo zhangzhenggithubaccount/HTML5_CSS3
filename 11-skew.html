@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            float: left;
+            width: 500px;
+            height: 300px;
+            border: 1px solid skyblue;
+            position: relative;
+        }
+
+        .wrap div {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, skyblue, blue);
+            transition-duration: 1s;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -50px 0 0 -50px;
+        }
+
+        .wrap:nth-child(1):hover div {
+            transform: skew(30deg, 30deg);
+        }
+
+        .wrap:nth-child(2):hover div {
+            transform: skew(30deg)
+        }
+
+        .wrap:nth-child(3):hover div {
+            transform: skewX(30deg);
+        }
+
+        .wrap:nth-child(4):hover div {
+            transform: skewY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div></div>
+    </div>
+    <div class="wrap">
+        <div></div>
+    </div>
+    <div class="wrap">
+        <div></div>
+    </div>
+    <div class="wrap">
+        <div></div>
+    </div>
+</body>
+</html>

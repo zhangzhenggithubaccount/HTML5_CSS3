@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- url, email, search, tel, number, range, color, submit -->
+</head>
+<body>
+    <form action="#">
+        <!-- url输入域
+        提交时默认进行格式验证，输入不合法弹出提示且无法提交；移动端：.com 键盘变化 -->
+        <div>url:<input type="url" name="userurl" /></div>
+        
+        <!-- email域
+        提交时默认进行格式验证，输入不合法弹出提示且无法提交；移动端：@ 键盘变化 -->
+        <div>email:<input type="email" name="useremail" /></div>
+
+        <!-- 搜索域 -->
+        <div>search:<input type="search" name="usersearch"/></div>
+
+        <!-- 电话号码输入域 -->
+        <div>tel:<input type="tel"></div>
+
+        <!-- 数值输入域
+        value 初始值
+        min 最小值
+        max 最大值
+        step 步长 -->
+        <div>number:<input type="number" value="10" min="0" max="20" step="1" /></div>
+
+        <div>range:<input type="range" value="5" min="1" max="10" step="1"/></div>
+
+        <!-- 取色器 -->
+        <div>color:<input type="color" /></div>
+
+        <div>submit:<input type="submit" /></div>
+
+        <!-- 可选时间 -->
+        <div><input type="date" name="userdate" /></div>
+
+        <!-- 自填时间 -->
+        <div><input type="datatime" /></div>
+
+        <!-- 本地时间 选择年，月，日，小时，分钟-->
+        <div><input type="datetime-local" /></div>
+
+        <!-- 选择年，月 -->
+        <div><input type="month" /></div>
+
+        <!-- 选择年，周 -->
+        <div><input type="week" /></div>
+
+        <div>
+            <input list="cars" name="usercar" />
+            <datalist id="cars">
+                <option value="BMW"></option>
+                <option value="Benz"></option>
+            </datalist>
+        </div>
+
+    </form>
+</body>
+</html>
